@@ -433,6 +433,7 @@ MonoBehaviour:
   - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0, b: 1, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
+  LigneATrouver: {fileID: 2054039182}
 --- !u!4 &352737589
 Transform:
   m_ObjectHideFlags: 0
@@ -487,6 +488,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -1482693844058486875, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spherePositions.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -1482693844058486875, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
       propertyPath: spherePosition.Array.data[0]
       value: 
       objectReference: {fileID: 7459444}
@@ -500,6 +505,22 @@ PrefabInstance:
       objectReference: {fileID: 670793593}
     - target: {fileID: -1482693844058486875, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
       propertyPath: spherePosition.Array.data[3]
+      value: 
+      objectReference: {fileID: 250299469}
+    - target: {fileID: -1482693844058486875, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spherePositions.Array.data[0]
+      value: 
+      objectReference: {fileID: 7459444}
+    - target: {fileID: -1482693844058486875, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spherePositions.Array.data[1]
+      value: 
+      objectReference: {fileID: 328456481}
+    - target: {fileID: -1482693844058486875, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spherePositions.Array.data[2]
+      value: 
+      objectReference: {fileID: 670793593}
+    - target: {fileID: -1482693844058486875, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spherePositions.Array.data[3]
       value: 
       objectReference: {fileID: 250299469}
     - target: {fileID: 1683500128989674500, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}

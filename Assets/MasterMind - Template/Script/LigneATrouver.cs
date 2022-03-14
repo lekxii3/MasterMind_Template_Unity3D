@@ -25,7 +25,7 @@ public class LigneATrouver : MonoBehaviour
 
 
 
- private void ColorRandomStartGame()
+ public void ColorRandomStartGame()
  {
   _tableauColor = new[] {_bleu, _rouge, _violet, _blanc};
 
@@ -35,6 +35,10 @@ public class LigneATrouver : MonoBehaviour
   sphere[2].GetComponent<Renderer>().material.color = _tableauColor[Random.Range(0,_tableauColor.Length)];
   sphere[3].GetComponent<Renderer>().material.color = _tableauColor[Random.Range(0,_tableauColor.Length)];
   //sphere[0].GetComponent<Renderer>().material.color = _blanc;
+  
+  
+  
+  
  }
  
 }
