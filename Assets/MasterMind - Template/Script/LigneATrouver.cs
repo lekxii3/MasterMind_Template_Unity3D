@@ -7,17 +7,25 @@ using Random = UnityEngine.Random;
 public class LigneATrouver : MonoBehaviour
 {
  //---------------------------------------------------------//
+ // variable pour tableau de couleur //
  private Color _bleu = Color.blue;
  private Color _rouge = Color.red;
  private Color _violet = Color.magenta;
  private Color _blanc = Color.white;
 
- private Color[] _tableauColor = new Color[4];
+ public Color[] _tableauColor = new Color[4];
 
  public GameObject[] sphere;
  //---------------------------------------------------------//
  
  private void Start()
+ {
+  ColorRandomStartGame();
+ }
+
+
+
+ private void ColorRandomStartGame()
  {
   _tableauColor = new[] {_bleu, _rouge, _violet, _blanc};
 
@@ -26,9 +34,7 @@ public class LigneATrouver : MonoBehaviour
   sphere[1].GetComponent<Renderer>().material.color = _tableauColor[Random.Range(0,_tableauColor.Length)];
   sphere[2].GetComponent<Renderer>().material.color = _tableauColor[Random.Range(0,_tableauColor.Length)];
   sphere[3].GetComponent<Renderer>().material.color = _tableauColor[Random.Range(0,_tableauColor.Length)];
-
-
   //sphere[0].GetComponent<Renderer>().material.color = _blanc;
-
  }
+ 
 }
